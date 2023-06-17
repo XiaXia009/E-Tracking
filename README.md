@@ -1,5 +1,5 @@
 # E-Tracking(Shopee)
- 統一超商交貨便貨態查詢(包含 OCR 自動辨識驗證碼)
+ 統一超商交貨便貨態查詢(包含 OCR 自動辨識驗證碼)  
  本庫使用[ThanatosDi/E-Tracking](https://github.com/ThanatosDi/E-Tracking)改版
 # Install
 1. 下載本包
@@ -17,8 +17,8 @@
     * txtProductNum: [str] 貨態號碼 詳細請至[貨態號碼查詢教學](https://eservice.7-11.com.tw/e-tracking/TeachPage.html)查看
     * autoVerify: [Boolean] 是否啟用 OCR 自動辨識驗證碼 (default: False)
 # Use
-先在Userdata裡輸入使用者資料
-直接開啟 login.py
+先在Userdata裡輸入使用者資料  
+直接開啟 login.py  
 若想使用 etracking.py 庫:
 ```python
 from etracking import ECTRACKER
