@@ -32,7 +32,14 @@ class Shopee_Login():
         time.sleep(1)
         button = self.driver.find_element(By.XPATH, '//*[@id="main"]/div/div[2]/div/div/div/div[2]/form/div/div[2]/button')
         button.click()
-        self.get_cargo_data()
+        try:
+            time.sleep(3.5)
+            wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'axexMF')))
+            print('需手機驗證'"\n"\
+                  '驗證後請關閉本程式')
+            time.sleep(99999)
+        except:
+            self.get_cargo_data()
 
     def get_cargo_data(self):
         self.wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'stardust-popover')))
@@ -63,3 +70,4 @@ class Shopee_Login():
 
 SHOPEE_LOGIN = Shopee_Login()
 SHOPEE_LOGIN.login()
+    
