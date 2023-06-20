@@ -27,12 +27,12 @@ ECTRACKER.tracker('物流碼(7或11位)', autoVerify=True)
 輸出的資料將會在[cargo]
 # Error
 * OCR自動辨識  
-  `Verify identify image error.` : 驗證碼判斷錯誤  
-  `can't identify image` : 無法判斷驗證碼
-* Login
-  `需手機驗證 驗證後請關閉本程式` : 手機驗證後到 `CMD` ctrl+c關閉
-* Exception
-  錯誤為 `Exception` 需自行處理或到[issues](https://github.com/XiaXia009/E-Tracking/issues)中發出問題
+  * `Verify identify image error.` : 驗證碼判斷錯誤  
+  * `can't identify image` : 無法判斷驗證碼
+* Login  
+  * `需手機驗證 驗證後請關閉本程式` : 手機驗證後到 `CMD` ctrl+c關閉
+* Exception  
+  * 錯誤為 `Exception` 需自行處理或到[issues](https://github.com/XiaXia009/E-Tracking/issues)中發出問題
 # Contributors
 <table>
   <tbody>
