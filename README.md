@@ -26,9 +26,13 @@ ECTRACKER.tracker('物流碼(7或11位)', autoVerify=True)
 ```
 輸出的資料將會在[cargo]
 # Error
-etracking.CodeNotFound: can't identify image.  
-使用 OCR 自動判斷驗證碼錯誤時將拋出例外: `can't identify image`  
-請自行進行例外處理(重新執行至正確)
+* OCR自動辨識
+  `Verify identify image error.` : 驗證碼判斷錯誤  
+  `can't identify image` : 無法判斷驗證碼
+* Login
+  `需手機驗證 驗證後請關閉本程式` : 手機驗證後到 `CMD` ctrl+c關閉
+* Exception
+  錯誤為 `Exception` 需自行處理或到[issues](https://github.com/XiaXia009/E-Tracking/issues)中發出問題
 # Contributors
 <table>
   <tbody>
