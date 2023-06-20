@@ -32,7 +32,9 @@ etracking.CodeNotFound: can't identify image.
 # Contributors
 <table>
   <tbody>
-      <td align="center" valign="top" width="14.28%"><a href="https://lit.link/en/XiaXia"><img src="https://avatars.githubusercontent.com/u/107758517?v=4?s=100" width="100px;" alt="Ray"/><br/><sub><b>Ray</b></sub></a><br/><a href="https://github.com/XiaXia009" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://blog.kawai.moe/"><img src="https://avatars.githubusercontent.com/u/12424898?v=4?s=100" width="100px;" alt="ThanatosDi"/><br/><sub><b>ThanatosDi</b></sub></a><br/><a href="https://github.com/ThanatosDi" title="Code">💻</a></td>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/XiaXia009"><img src="https://avatars.githubusercontent.com/u/107758517?v=4" width="100px;" alt="Ray"/><br /><sub><b>Ray</b></sub></a><br /><a title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ThanatosDi"><img src="https://avatars.githubusercontent.com/u/12424898?v=4" width="100px;" alt="ThanatosDi"/><br /><sub><b>ThanatosDi</b></sub></a><br /><a title="Code">💻</a></td>
+    </tr>
   </tbody>
 </table>
