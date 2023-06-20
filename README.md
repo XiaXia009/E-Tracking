@@ -26,7 +26,7 @@ ECTRACKER.tracker('物流碼(7或11位)', autoVerify=True)
 ```
 輸出的資料將會在[cargo]
 # Error
-* OCR自動辨識
+* OCR自動辨識  
   `Verify identify image error.` : 驗證碼判斷錯誤  
   `can't identify image` : 無法判斷驗證碼
 * Login
