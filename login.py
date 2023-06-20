@@ -1,8 +1,9 @@
 import re
+import sys
 import time
+import shutil
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from etracking import ECTRACKER
 from dotenv import dotenv_values
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -32,14 +33,7 @@ class Shopee_Login():
         time.sleep(1)
         button = self.driver.find_element(By.XPATH, '//*[@id="main"]/div/div[2]/div/div/div/div[2]/form/div/div[2]/button')
         button.click()
-        try:
-            time.sleep(3.5)
-            wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'axexMF')))
-            print('需手機驗證'"\n"\
-                  '驗證後請關閉本程式')
-            time.sleep(99999)
-        except:
-            self.get_cargo_data()
+        self.get_cargo_data()
 
     def get_cargo_data(self):
         self.wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'stardust-popover')))
@@ -55,7 +49,9 @@ class Shopee_Login():
         self.handle_cargo_data(data)
 
     def handle_cargo_data(self, data):
+        time.sleep(1.5)
         for item in data:
+            from etracking import ECTRACKER
             self.driver.get(self.url + item['href'])
             self.wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'PW9gQm')))
             data = self.driver.page_source
@@ -64,10 +60,12 @@ class Shopee_Login():
             unprocessed_data_2 = unprocessed_data_1.replace(self.remove_1, "")
             data = unprocessed_data_2.replace(self.remove_2, "")
             cargo = ECTRACKER.tracker(data, autoVerify=True)
+            del sys.modules['etracking']
+            shutil.rmtree('__pycache__')
             self.f.write(str(cargo))
             self.f.write('\n')
-            time.sleep(1)
+
 
 SHOPEE_LOGIN = Shopee_Login()
 SHOPEE_LOGIN.login()
-    
+print('貨態於 <cargo.txt> ')
