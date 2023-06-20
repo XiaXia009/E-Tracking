@@ -29,3 +29,12 @@ ECTRACKER.tracker('物流碼(7或11位)', autoVerify=True)
 etracking.CodeNotFound: can't identify image.  
 使用 OCR 自動判斷驗證碼錯誤時將拋出例外: `can't identify image`  
 請自行進行例外處理(重新執行至正確)
+# Contributors
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://lit.link/en/XiaXia"><img src="https://avatars.githubusercontent.com/u/107758517?v=4?s=100" width="100px;" alt="Ray"/><br /><sub><b>Ray</b></sub></a><br /><a href="https://github.com/XiaXia009" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://blog.kawai.moe/"><img src="https://avatars.githubusercontent.com/u/12424898?v=4?s=100" width="100px;" alt="ThanatosDi"/><br /><sub><b>ThanatosDi</b></sub></a><br /><a href="https://github.com/ThanatosDi" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
