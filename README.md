@@ -32,7 +32,8 @@ ECTRACKER.tracker('物流碼(7或11位)', autoVerify=True)
 * Login  
   * `需手機驗證 驗證後請關閉本程式` : 手機驗證後到 `CMD` ctrl+c關閉
 * Exception  
-  * 錯誤為 `Exception` 需自行處理或到[issues](https://github.com/XiaXia009/E-Tracking/issues)中發出問題  
+  * 錯誤為 `Exception` 需自行處理或到[issues](https://github.com/XiaXia009/E-Tracking/issues)中發出問題
+
 OCR自動辨識 / Login 類錯誤只需至需重新啟動Login.py即可
 # Contributors
 <table>
