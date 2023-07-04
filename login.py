@@ -34,8 +34,7 @@ class Shopee_Login():
         button = self.driver.find_element(By.XPATH, '//*[@id="main"]/div/div[2]/div/div/div/div[2]/form/div/div[2]/button')
         button.click()
         try:
-            time.sleep(3)
-            wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'axexMF')))
+            wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'ddGpRM')))
             print('需手機驗證'"\n"\
                   '驗證後請關閉本程式')
             time.sleep(99999)
