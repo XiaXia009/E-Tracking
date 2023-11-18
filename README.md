@@ -8,7 +8,7 @@
     pip install -r requirements.txt
     ```
 3. 安裝 tesseract (如需使用 OCR 自動辨識)
-   [Linux 安裝 tesseract](https://github.com/tesseract-ocr/tesseract/wiki)
+   [Linux 安裝 tesseract](https://github.com/tesseract-ocr/tesseract/wiki) 
    [Windows 安裝 tesseract](https://github.com/UB-Mannheim/tesseract/wiki)
 # API Reference
 * ECTracker(tesseract_path='tesseract'): [class]
